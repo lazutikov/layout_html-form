@@ -10,10 +10,10 @@
 </head>
 <body>
   <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
-    <fieldset class="part">
+    <fieldset class="form-block">
       <legend>Personal information</legend>
       <label class="block-input">Surname:
-        <input type="text" name="surname" id="surname">
+        <input type="text" name="surname" id="surname" required>
       </label>
       <label class="block-input">Name:
         <input type="text" name="name" id="name">
@@ -28,7 +28,7 @@
         <input type="checkbox" name="agreement" id="agreement">
       </label>
     </fieldset>
-    <fieldset class="part">
+    <fieldset class="form-block">
       <legend>Registration</legend>
       <label for="email" class="block-input">E-mail:
         <input type="email" placeholder="email@example.com" name="email" id="email" autocomplete="off">
@@ -37,12 +37,12 @@
       <input type="password" name="pass" id="pass" autocomplete="off">
       </label>
     </fieldset>
-    <fieldset class="part">
+    <fieldset class="form-block ">
       <legend>An interesting fact about you!</legend>
       <div class="block-input">Do you love cats?
-      <input type="radio" name="cats" id="yes">
+      <input type="radio" name="cats" id="yes" value="yes">
       <label for="yes" name="cats">Yes</label>
-      <input type="radio" name="yes-no" id="no">
+      <input type="radio" name="cats" id="no" value="no">
         <label for="no" name="yes-no">No</label>
       </div>
       <label for="color" class="block-input">What is your favorite color?
@@ -62,7 +62,7 @@
         <input type="range" name="rate" id="rate" min="1" max="10" value="1">
       </label>
     </fieldset>
-    <fieldset class="part">
+    <fieldset class="form-block">
       <legend>Additional info:</legend>
       <label for="comments" class="block-input">Comments:
         <textarea name="comments" id="comments" cols="20" rows="2" maxlength="200"></textarea>
